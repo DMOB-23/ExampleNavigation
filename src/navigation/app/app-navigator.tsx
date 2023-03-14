@@ -1,8 +1,9 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { HomeScreen } from "../../screens/home"
 import { SecondScreen } from "../../screens/second"
+import { AppStackParamList } from "./interface"
 
-const Stack = createNativeStackNavigator()
+const Stack = createNativeStackNavigator<AppStackParamList>()
 
 const AppNavigator = () => {
     return (
